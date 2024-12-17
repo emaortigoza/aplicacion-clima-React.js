@@ -1,0 +1,106 @@
+.container{
+    max-width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 
+    -1px -1px 0 black,  
+     1px -1px 0 black,  
+    -1px  1px 0 black,  
+     1px  1px 0 black;
+}
+
+.search-box {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    
+}
+.search-box input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.search-box button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #a4a4ff;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-box button:hover {
+    background-color: #7a7acb;
+}
+
+.weather-box{
+    border-radius: 4px;
+    border: 4px solid rgba(113, 241, 87, 0.801);
+    max-width: 100%;
+    width: 600px;
+    background-color: #3939995b;
+}
+
+.weather-box h2 {
+    margin-top: 10px;
+    font-size: 2rem;
+    color: rgb(193, 238, 89);
+    text-shadow: 
+    -1px -1px 0 black,  
+     1px -1px 0 black,  
+    -1px  1px 0 black,  
+     1px  1px 0 black;
+}
+
+.dataClima__principal p{
+    margin: 5px 0;
+    font-size: 1.5rem;
+    color: white;
+    text-shadow: 
+    -1px -1px 0 black,  
+     1px -1px 0 black,  
+    -1px  1px 0 black,  
+     1px  1px 0 black;
+}
+.dataClima_secundaria ul{
+    list-style: none;
+    margin-top: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-right: 40px;
+    color: white;
+    text-shadow: 
+    -1px -1px 0 black,  
+     1px -1px 0 black,  
+    -1px  1px 0 black,  
+     1px  1px 0 black;
+}
+.dataClima_secundaria ul li{
+    margin: 5px 0;
+}
+
+@media screen and (min-width: 900px ){
+    .weather-box{
+        width: 900px;
+    }
+    .dataClima{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .dataClima_secundaria{
+        border-left: 1px solid black;
+    }
+}
